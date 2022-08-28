@@ -1,0 +1,114 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link type="text/css" href="{% static 'site_styles/styles.css' %}" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Title</title>
+</head>
+<body class="container-lg">
+<header>
+    <div class="row d-flex align-items-center justify-content-around">
+        <div class="col-1 d-lg-none">
+            <a class="nav-link" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <img src="/static/site_img/burger_menu.svg">
+            </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <li>
+                <a class="dropdown-item" href="#">
+                    <span class="fs-5 text-light">
+                            приемущества
+                    </span>
+                </a>
+            </li>
+            <li>
+                <a class="dropdown-item" href="#">
+                    <span class="fs-5 text-light">
+                            фотографии
+                    </span>
+                </a>
+            </li>
+            <li>
+                <a class="dropdown-item" href="#">
+                    <span class="fs-5 text-light">
+                            контакты
+                    </span>
+                </a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-5 d-flex justify-content-lg-center justify-content-start">
+            <img src="/static/site_img/logo.svg">
+        </div>
+        <div class="col-lg-4 d-none d-lg-flex">
+            <div class="row d-flex justify-content-between">
+                <div class="col-auto ">
+                    <a href="#">
+                        <span class="fs-5 text-light">
+                            приемущества
+                        </span>
+                    </a>
+                </div>
+                <div class="col-auto ">
+                    <a href="#">
+                        <span class="fs-5 text-light">
+                            фотографии
+                        </span>
+                    </a>
+                </div>
+                <div class="col-auto">
+                    <a href="#">
+                        <span class="fs-5 text-light">
+                            контакты
+                        </span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-3 col-5 d-flex flex-shrink-1 justify-content-lg-center justify-content-end">
+            <a href="#">
+                <button class="btn-color d-flex justify-content-center align-items-center">
+                    <span class="fs-5 text-light">
+                        вход
+                    </span>
+                </button>
+            </a>
+        </div>
+    </div>
+</header>
+{% block content %}
+{% endblock %}
+<footer>
+    <div class="row d-flex align-items-center justify-content-md-center">
+        <div class="col-md-2 row-2 d-flex d-flex justify-content-md-end justify-content-center">
+            <img src="/static/site_img/logo.svg">
+        </div>
+        <div class="col-md-5 row-2">
+            <div class="row d-flex justify-content-md-start justify-content-center">
+                <div class="col-auto ">
+                    <span class="fs-6 text-light">
+                        ©NASA, all rights reserved
+                    </span>
+                </div>
+                <div class="col-auto ">
+                    <a href="#">
+                        <span class="fs-6 text-light">
+                            Персональные данные
+                        </span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 row-2 d-flex justify-content-center">
+            <span class="fs-6 text-light">
+                Разработка сайта —&ensp;<a href="#" class="fs-6 text-light">вангер.рф</a>
+            </span>
+        </div>
+    </div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+
+</html>

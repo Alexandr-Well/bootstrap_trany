@@ -1,0 +1,36 @@
+
+header a{
+    text-decoration: none;
+}
+
+
+header {
+    background-color: #0A121E;
+}
+footer {
+    background-color: #0A121E;
+}
+
+.btn-color {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    border: none;
+
+    background-color: transparent;
+    cursor: pointer;
+
+    width: 88px;
+    height: 44px;
+
+    /* Красный */
+
+    background: #FF342B;
+    border-radius: 4px;
+
+    /* Inside auto layout */
+
+    flex: none;
+    border: 2;
+    flex-grow: 0;
+}
