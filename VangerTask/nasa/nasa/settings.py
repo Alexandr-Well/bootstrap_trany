@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
 
+    'adminsortable2',
     'easy_thumbnails',
     'filer',
     'mptt',
@@ -132,3 +133,5 @@ STATICFILES_DIRS = []
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media/')
 
 MEDIA_URL = '/media/'
+
+FILER_CANONICAL_URL = 'sharing/'
